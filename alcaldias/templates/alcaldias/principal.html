@@ -1,0 +1,64 @@
+{% extends "alcaldias/base.html" %}
+
+{% block formulario %}
+<div id="form-container">
+
+
+{% if form.errors %} <div class="error_message">Por favor corregir los siguientes errores: {{forms.errors}} </div> {% endif %}
+
+{% if form.departamento.errors %} <span class="error_message">{{form.departamento.errors}}</span> {% endif %}
+<div class="entrada_form">
+<label for="departamentos">Departamentos: </label>
+{{form.departamento}}
+</div>
+<!--<select name="departamentos" id="departamentos">-->
+	
+</select>
+
+{% if form.municipio.errors %} <span class="error_message">{{form.municipio.errors}}</span> {% endif %}
+<div class="entrada_form">
+<label for="municipios">Municipios: </label>
+{{form.municipio}}
+</div>
+<!--<select name="municipios" id="municipios">-->
+	
+</select>
+
+<div class="entrada_form">
+<button id="localizar_btn" disabled>Localizar</button>
+</div>
+
+</div>
+
+<div id="opciones_completar">
+	<p>! Has sido localizado !, Si no estás en la entrada, puedes llenar la incerteza en metros.</p>
+	{% if form.incerteza.errors %} <span class="error_message">{{form.incerteza.errors}} </span>{% endif %}
+	<p>
+	<label for="incerteza">Incerteza: </label>
+	{{form.incerteza}}
+	</p>
+	<button id="guardar_btn">Guardar</button>
+	<button id="cancelar_btn">Cancelar</button>
+	<p><span id="advertencia_registrada" class="advertencia"></span></p>
+</div>
+
+<div class="error_panel"></div>
+
+{% endblock %}
+
+{% block mapa %}
+<div id="map"></div>
+
+<script type="text/javascript">
+	var SOCK = {
+          host: location.hostname,
+          port: {{ socket_port }},
+          channel: '{{ socket_channel }}'
+     };
+</script>
+<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+<script type="text/javascript" src="/static/js/alcaldias/sockjs-0.3.2.min.js"></script>
+<script type="text/javascript" src="/static/js/alcaldias/mapa.js"></script>
+<script type="text/javascript" src="/static/js/alcaldias/llamadas.js"></script>
+<script type="text/javascript" src="/static/js/alcaldias/main.js"></script>
+{% endblock %}

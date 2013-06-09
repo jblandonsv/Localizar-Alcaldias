@@ -1,0 +1,29 @@
+{% extends "alcaldias/base.html" %}
+{% block formulario %}
+
+<div class="login-container">
+<form action="entrar" method = "POST">
+	{% csrf_token %}
+
+	{% if form.errors %} <p>Por favor corregir</p> {% endif %}
+
+	<div class="login_field">
+		<label for="password">Usuario:</label>
+		{% if form.username.errors %}<p>{{forms.username.errors }}</p>{% endif %}
+		{{ form.username }}
+	</div>
+
+	<div class="login_field">
+		<label for="password">Contraseña:</label>
+		{% if form.password.errors %}<p>{{ forms.password.errors }}</p>{% endif %}
+		{{ form.password }}
+	</div>
+
+	<button class = "btn_login">Acceder</button>
+	<input type="hidden" name="next" value="{{ next }}" />
+
+</form>
+
+<div class="error_message">{{ message }}</div>
+</div>
+{% endblock %}

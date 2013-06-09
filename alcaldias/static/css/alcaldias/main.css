@@ -1,0 +1,30 @@
+body{background:#eee;font-family:'Marcellus SC',serif;font-size:16px;text-align:center}
+header{background:#f03;color:#eee;margin:0 0 16px 0;padding:3px 0;text-shadow:3px 2px 5px #d3d3d3}
+footer{border-top:2px solid #d3d3d3;bottom:0;position:fixed;width:100%}
+header h1,.salir_div{display:inline-block;height:100%}
+#form-container{margin:1em;padding:.5em}
+#map{height:360px}
+#mapa_btn{display:none}
+#opciones_completar{border-radius:8px;box-shadow:8px 8px 10px #d3d3d3;display:none}
+.advertencia{color:#f60;font-weight:bold;text-shadow:3px 2px 5px #d3d3d3}
+.browser-container{margin:0 auto}
+.browser-container figure{display:block;width:200px;height:200px}
+.browser-container figure img{width:100%;height:100%}
+.btn_login{border-radius:8px;background:#f90;color:#300}
+.exito{background:#9f6;color:#888;display:none;margin:0 auto;width:35%}
+.entrada_form{display:inline-block;vertical-align:top}
+.error_message{color:#c00;font-weight:bold;text-shadow:3px 2px 5px #d3d3d3}
+.login-container{background:#f63;border-radius:8px;box-shadow:8px 8px 10px #d3d3d3;margin:0 auto;padding:8px;width:35%}
+.login-container form input{margin:16px}
+.login-container form label{color:#eee;display:block;font-weight:bold}
+.salir_div{background:#f03;border:1px solid #f99;color:#eee;height:100%;margin-left:5%;width:90px}
+.salir_div a{text-decoration:none;color:#eee}
+.salir_div:hover{background:#f06;cursor:pointer}
+.socket-problem-container{margin:0 auto}
+@media screen and(max-width:510px){header h1{display:none}
+#map{display:none}
+#mapa_btn{display:inline-block}
+.entrada_form{display:block;margin:0;padding:8px 0}
+.exito{width:90%}
+.login-container{width:90%}
+}
