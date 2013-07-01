@@ -6,6 +6,7 @@ header h1,.salir_div{display:inline-block;height:100%}
 #map{height:360px}
 #mapa_btn{display:none}
 #opciones_completar{border-radius:8px;box-shadow:8px 8px 10px #d3d3d3;display:none}
+#Espera{border-radius:8px;box-shadow:8px 8px 10px #d3d3d3;display:none}
 .advertencia{color:#f60;font-weight:bold;text-shadow:3px 2px 5px #d3d3d3}
 .browser-container{margin:0 auto}
 .browser-container figure{display:block;width:200px;height:200px}

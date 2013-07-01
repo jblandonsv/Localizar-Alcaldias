@@ -47,11 +47,14 @@ function localizar()
 	{
 		// El navegador soporta geolocalización y ahora se ubicará el punto donde se encuentra el usuario
 		navigator.geolocation.getCurrentPosition(encontrado,errorLocalizar)
-		$('#opciones_completar').addClass('exito');
-		$('#opciones_completar').show("slow");
-		$('#id_municipio').attr('disabled','disabled');
-		$('#id_departamento').attr('disabled','disabled');
-		$('#localizar_btn').attr('disabled','disabled');
+                $('#Espera').addClass('exito');
+                $('#Espera').show('slow');
+                /*$('#opciones_completar').addClass('exito');
+                $('#opciones_completar').show("slow");
+                $('#id_municipio').attr('disabled','disabled');
+                $('#id_departamento').attr('disabled','disabled');
+                $('#localizar_btn').attr('disabled','disabled');*/
+
 
 	}else{
 		// El navegador no soporta geolozalización
@@ -67,6 +70,13 @@ function encontrado(posicion)
 	miPosicion.longitud = posicion.coords.longitude;
 	id_municipio = $('#id_municipio option:selected').val();
 	//Se procede a verificar que la alcaldia estaba registrada previamente
+	$('#Espera').hide('fast');
+         $('#opciones_completar').addClass('exito');
+                $('#opciones_completar').show("slow");
+                $('#id_municipio').attr('disabled','disabled');
+                $('#id_departamento').attr('disabled','disabled');
+                $('#localizar_btn').attr('disabled','disabled');
+
 	estaRegistrada(id_municipio)
 }
 
