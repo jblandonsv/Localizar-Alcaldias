@@ -17,8 +17,9 @@ Instalación:
 * Instalar Django 1.5. Seguir las instrucciones de acerudo a tu sistema operativo.
 * Descargar Sockjs-django-Tornado https://github.com/peterbe/django-sockjs-tornado,
    Luego abrir una terminal y desplazarse a los archivos descargados, y ejecutar los siguientes comandos:
-   # python setup.py build
-   # python setub.pyinstall
+   
+   > python setup.py build
+   > python setub.py install
    
    Si ningún mensaje de error es reportado, entonces se instaló de forma correcta.
 
@@ -39,7 +40,7 @@ DATABASES = {
 }
 
 * En una terminal, en la caperta de instalación, ejecutar el comando:
-  # python manage.py syncdb
+  > python manage.py syncdb
   
   Darle "yes" a la creación de super usuario y colocarle los datos que solicite el asistente.
   
@@ -47,10 +48,10 @@ DATABASES = {
   
 * En una terminal, en la carpeta de instalación ejecutar el comando:
 
-  # python mananage.py socketserver
+  > python mananage.py socketserver
   
 * En otra terminal, en la carpeta de instalación ejecutar el comando:
-  # python manage.py runserver
+  > python manage.py runserver
   
 * Acceder a: 
 
