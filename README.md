@@ -19,6 +19,9 @@ Instalación:
    Luego abrir una terminal y desplazarse a los archivos descargados, y ejecutar los siguientes comandos:
    
    > python setup.py build
+
+Y luego:
+
    > python setub.py install
    
    Si ningún mensaje de error es reportado, entonces se instaló de forma correcta.
