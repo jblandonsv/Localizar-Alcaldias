@@ -27,8 +27,8 @@ Instalación:
 * Crear una base de datos, puedes ponerle el nombre que gustes.
 * Dentro de la carpeta rnpn, modificar el archivo settings.py y colocar la siguiente información:
 
-DATABASES = {
-    'default': {
+> DATABASES = {
+>    'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'nombre_de_tu_base_de_datos',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
