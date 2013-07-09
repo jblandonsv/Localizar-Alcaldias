@@ -29,13 +29,12 @@ Instalación:
 
 > DATABASES = {
 >    'default': {
->        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
->        'NAME': 'nombre_de_tu_base_de_datos',                      # Or path to database file if using sqlite3.
->        # The following settings are not used with sqlite3:
+>        'ENGINE': 'django.db.backends.mysql',
+>        'NAME': 'nombre_de_tu_base_de_datos',
 >        'USER': 'tu_usuario',
 >        'PASSWORD': 'tu_contrasennia',
->        'HOST': 'tu_host',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
->        'PORT': 'tu_puerto',                      # Set to empty string for default.
+>        'HOST': 'tu_host',                  
+>        'PORT': 'tu_puerto',
 >    }
 > }
 
