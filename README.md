@@ -13,6 +13,10 @@ Requisitos de Instalación:
 
 Instalación:
 ==========================
+* Utilizando el instalador de paquetes pip:
+
+  > pip install -r requirements.txt
+
 * Instalar Python 2.7. Seguir las instrucciones de acuerdo a tu sistema operativo.
 * Instalar Django 1.5. Seguir las instrucciones de acerudo a tu sistema operativo.
 * Descargar Sockjs-django-Tornado https://github.com/peterbe/django-sockjs-tornado,
